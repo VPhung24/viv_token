@@ -1,5 +1,5 @@
 <p align="center">
-<img src="static/vivTokenLogo.png" height="200px" alt="red circle logo with `viv` carved out on a white background. `i` letter flipped in viv and looks like a mouth">
+<img src="static/viv_banner.png" width="90%" alt="red circle logo with `viv` carved out on a white background. `i` letter flipped in viv and looks like a mouth">
 </p>
 
 # viv token erc 20
