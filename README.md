@@ -3,24 +3,14 @@
 </p>
 
 # viv token erc 20
- * smart contract deployed @ [0x9693De0E8196ca28033A2E8d82E48C817d76b1ED](https://etherscan.io/address/0x9693De0E8196ca28033A2E8d82E48C817d76b1ED)
- * [airdrop](https://whalerdao.github.io/astrodrop/claim/Qmai3LEL3sLdgatQkWVUvNynBZXS69ehLwBab5a3xg8KfM) (til end of march 2022)
-
-
-### replicate
-
-```console
-$ npx hardhat
-$ hardhat init # used advanced hardhat sample project 
-$ npm install @rari-capital/solmate
-```
+ * smart contract deployed:
+    * mainnet: [0x9693De0E8196ca28033A2E8d82E48C817d76b1ED](https://etherscan.io/address/0x9693De0E8196ca28033A2E8d82E48C817d76b1ED)
+    * goerli: [0x0900D8c5ed492778d3f99691567bCE6A63513BA1](https://goerli.etherscan.io/address/0x0900D8c5ed492778d3f99691567bCE6A63513BA1#code)
 
 ### deploy
 
-tip: test on ropsten before deploying to mainnet
-
 ```
-npx hardhat run scripts/deploy.ts --network <network ie. ropsten>
+npx hardhat run scripts/deploy.ts --network <network ie. goerli>
 ```
 
 ### etherscan verification
@@ -28,10 +18,10 @@ npx hardhat run scripts/deploy.ts --network <network ie. ropsten>
 npx hardhat verify <DEPLOYED_CONTRACT_ADDRESS> --network <network>
 ```
 
-### .env
+### replicate
 
-```
-ETHERSCAN_API_KEY=<>
-ROPSTEN_URL=https://ropsten.infura.io/v3/<>
-PRIVATE_KEY=<>
+```console
+npx hardhat
+hardhat init # used advanced hardhat sample project 
+npm install @rari-capital/solmate
 ```

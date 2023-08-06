@@ -28,18 +28,22 @@ const config: HardhatUserConfig = {
     settings: {
       optimizer: {
         enabled: true,
-        runs: 200
-      }
-    }
-  }, 
+        runs: 200,
+      },
+    },
+  },
   networks: {
-    ropsten: {
-      url: process.env.ROPSTEN_URL || "",
+    goerli: {
+      url:
+        process.env.GORLI_URL ||
+        "https://eth-goerli.g.alchemy.com/v2/" + process.env.ALCHEMY_API_KEY,
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     mainnet: {
-      url: process.env.MAINNET_URL || "https://mainnet.infura.io/v3/0e820b7eb7c54c2591508469f771c5ea",
+      url:
+        process.env.MAINNET_URL ||
+        "https://eth-mainnet.g.alchemy.com/v2/" + process.env.ALCHEMY_API_KEY,
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
